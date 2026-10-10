@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday 🎂</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i.postimg.cc/qvjz8QFW/Logo.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="password-screen" class="password-screen">
+      <div class="password-content">
+        <img
+          src="https://i.pinimg.com/originals/8c/d0/61/8cd061f25177d38be9719798c5127a9f.gif"
+          alt="Cute GIF"
+          class="pass-gif"
+        />
+        <div class="pass-right-side">
+          <p class="pass-label">Nhập Password</p>
+          <div class="pass-input-wrapper">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="keypad">
+            <button class="key" data-value="1">1</button>
+            <button class="key" data-value="2">2</button>
+            <button class="key" data-value="3">3</button>
+            <button class="key" data-value="4">4</button>
+            <button class="key" data-value="5">5</button>
+            <button class="key" data-value="6">6</button>
+            <button class="key" data-value="7">7</button>
+            <button class="key" data-value="8">8</button>
+            <button class="key" data-value="9">9</button>
+            <button class="key empty"></button>
+            <button class="key" data-value="0">0</button>
+            <button class="key delete" id="key-del">⌫</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-experience" style="display: none">
+      <div class="floating-elements" id="floating-elements"></div>
+
+      <div class="container">
+        <div class="cake-container">
+          <img
+            src="asset/candle.png"
+            alt="Candle"
+            class="candle-img"
+            id="candle-img"
+          />
+          <img
+            src="asset/cake.png"
+            alt="Cake"
+            class="cake-img"
+            id="cake-clickable"
+            style="cursor: pointer"
+          />
+        </div>
+        <p class="instruction" id="instruction-text">
+          Nhấn vào bánh để thắp nến
+        </p>
+      </div>
+
+      <div class="letter-container" id="letter-container">
+        <img src="asset/letter.png" alt="Letter" class="letter-img" />
+        <div class="letter-text">Open</div>
+      </div>
+
+      <div class="message-modal" id="message-modal">
+        <div class="fireworks-container" id="fireworks-container"></div>
+        <div class="letter-paper">
+          <span class="close-btn" id="close-modal">&times;</span>
+          <h2>Gửi Em Zai! 🎂</h2>
+          <p>
+            Chúc mừng sinh nhật nhé chàng trai! 🎉 <br /><br />
+            Sinh nhật này thật đặc biệt!<br />
+            Lần đầu tiên đón sinh nhật xa nhà, tuy không đón cùng gia đình 
+            nhưng bên cạnh có những người bạn mới quen cũng vui.<br />
+            Chúc cho em tuổi mới luôn vui vẻ, khỏe mạnh, bình an và 
+            thuận lợi trong hành trình chinh phục giấc mơ sắp tới.<br />
+            Hãy mạnh dạn bước ra khỏi vòng an toàn, tự quyết định lấy số phần cuộc đời.
+            <br /><br />
+            Nay tròn 18 tuổi gòi, đủ tuổi công dân rồi.<br />
+            Anh muốn nói rằng nay e đã lớn, đã đủ tuổi để nhận thức được những hành vi của mình
+            cũng như phải chịu mọi trách nhiệm cho những hành vi đó. <br />
+            Vì vậy hãy suy nghĩ, hành xử bình tĩnh hơn một chút, lí trí và sâu sắc hơn một chút,
+            và đặc biệt là không cho phép bản thân thử bất kì tệ nạn xã hội nào dù chỉ một lần.
+            <br /><br />
+            Gia đình luôn đứng phía sau quan tâm và ủng hộ. <br />
+            Yêu thương e nhiều! ❤️
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <audio id="bg-music" src="asset/sound/nhac.mp3" loop></audio>
+    <audio id="pop-sound" src="asset/sound/pop.mp3"></audio>
+    <audio id="candle-sound" src="asset/sound/candle.mp3"></audio>
+    <audio id="firework-sound" src="asset/sound/Firework.mp3"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
